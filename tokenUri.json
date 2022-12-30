@@ -1,0 +1,9 @@
+{
+    "name" : "Catto",
+    "description" : "An awesome catt",
+    "image" : "https://bafybeib476fezhgjb4zubev4abhvmxdmdukowltrtb5u3qbvanvavjfqri.ipfs.dweb.link/",
+    "attributes" : {
+        "trait_type" : "cuteness",
+        "value": 100
+    }
+}
