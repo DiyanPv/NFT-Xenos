@@ -10,11 +10,12 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
   const { deploy, log } = deployments;
   const { deployer } = await getNamedAccounts();
   const args = [];
-  // const firstNFT = await deploy("NFT", {
-  //   from: deployer,
-  //   args: args,
-  //   log: true,
-  // });
+  const firstNFT = await deploy("NFT", {
+    from: deployer,
+    args: args,
+    log: true,
+  });
+  console.log(`Deployed at ${firstNFT.address}`);
   // if (!developmentChains.includes(network.name)) {
   //   await verify(firstNFT.address, args);
   // }
@@ -22,4 +23,4 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
 //Goerli NFT generated at https://goerli.etherscan.io/address/0x149fb1ee5d608a4b5cc8194b1d4cc213e76169fb
 
-module.exports.tags = ['all', 'randomipfs', 'main']
+module.exports.tags = ["all", "main"];
